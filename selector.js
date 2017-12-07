@@ -3,17 +3,20 @@ console.log('hello world');
 
 
   var turn = 1;
+  //var x = "X";
+  //var o = "O";
 
   $("#gameboard tr td").click(function() {
   	//wait for click on game board and pieces
-    if ($(this).text()=="") {
-      if ((turn%2)==1) { 
+    if ($(this).text()=="" && (turn%2==1)) {
+      //if ((turn%2)==1) { 
       	$(this).append("X").css(); 
       	} else { 
       	$(this).append("O"); }
-      turn++;
-    }
-  });
+        turn++;
+    });
+
+  
 
 // Resent board's text to replay game
 $("#resetButton").click(function() {
