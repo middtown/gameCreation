@@ -16,8 +16,13 @@ console.log('hello world');
   });
 
 // Prevent form submission
-//$('')[0].reset();
+$("#resetBotton").click(function() {
+  $("#gameboard tr td").rest();
+}
+}
 
+
+  //event.preventDefault();
 
 // 	var clicks = 0;
 // 	var name1 = "Jim";
@@ -46,46 +51,6 @@ console.log('hello world');
 // 		alert ("X plays first");
 // 	});
 // 	});
-
-
-
-
-
-
-	
 		//console.log("x");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });
