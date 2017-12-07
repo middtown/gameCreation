@@ -1,11 +1,11 @@
-.container{
-	max-width: 80%;
-	max-height: 80%;
+.container {
+	max-width: 30%;
+	max-height: 30%;
 	margin: 2%;
 	padding: 1%;
 	margin: 4% auto;
 }
-.playerInfo{
+.playerInfo {
 	text-align: center;
 	align-content: center;
 	border-bottom: 2px solid black;
@@ -13,14 +13,17 @@
 #scoreboard {
 	display: inline;
 }
-header{
+body {
+	
+}
+header {
 	text-align: center;
 	border-bottom: 2px solid black;
 	margin-bottom: 1%;
 	padding: 0 1% 1% 1%;
 	margin: 0 auto;
 }
-li{
+li {
 	list-style: none;
 	display: inline-block;
 	padding: 1%;
@@ -36,13 +39,15 @@ td {
   border: 6px solid #222;
 }
 td::after {
-  content: '';
+  content: ''; /* blank content set up */
   display: block;
   margin-top: 100%;
 }
 td {
   border: 6px solid #222;
 }
+/*recieved styling help from w3c schools for table locations
+*/
 td:first-of-type {
   border-left-color: transparent;
   border-top-color: transparent;

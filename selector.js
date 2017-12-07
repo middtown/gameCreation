@@ -8,18 +8,18 @@ console.log('hello world');
   	//wait for click on game board and pieces
     if ($(this).text()=="") {
       if ((turn%2)==1) { 
-      	$(this).append("X"); 
+      	$(this).append("X").css(); 
       	} else { 
       	$(this).append("O"); }
       turn++;
     }
   });
 
-// Prevent form submission
-$("#resetBotton").click(function() {
-  $("#gameboard tr td").rest();
-}
-}
+// Resent board's text to replay game
+$("#resetButton").click(function() {
+  $("#gameboard tr td").text("");
+});
+});
 
 
   //event.preventDefault();
@@ -53,4 +53,3 @@ $("#resetBotton").click(function() {
 // 	});
 		//console.log("x");
 
-});
