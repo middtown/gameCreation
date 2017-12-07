@@ -8,29 +8,49 @@
 	<title>Middtown Tic Tac Toe</title>
 </head>
 <body>
+	<header>
+		<h1> Middtown's Tic Tac Toe</h1>
+		<h3> This is how you play</h3>
+		<p>rules go here..</p>
+	</header>
 
-	<container id="gameboard">
-
-		<div id="row1">
-			<div id="cell1a" ></div>
-			<div id="cell1b" ></div>
-			<div id="cell1c" ></div>
-		</div>
-
-		<div id="row2">
-			<div id="cell2a" ></div>
-			<div id="cell2b" ></div>
-			<div id="cell2c" ></div>
-		</div>
-
-		<div id="row3">
-			<div id="cell3a" ></div>
-			<div id="cell3b" ></div>
-			<div id="cell3c" ></div>
-		</div>
-
+	<div class="playerInfo">
+		<h2> Player Scoreboard </h2>
 		
-	</container>
+		<ul>
+			<li id="player1"> Jim </li>
+			<li id="player1score"> 0 </li>
+			<li id="player2"> Bo </li>
+			<li id="player2score"> 0 </li>
+
+		</ul>
+			
+	</div>
+
+	<div class="container">
+		<table id="gameboard">
+  
+			  <tr id="row1">
+			    <td id="cell1a" class="cells">x</td>
+			    <td id="cell1b" class="cells">o</td>
+			    <td id="cell1c" class="cells">x</td>
+			  </tr>
+			  <tr id="row2">
+			    <td id="cell2a" class="cells">o</td>
+			    <td id="cell2b" class="cells">x</td>
+			    <td id="cell2c" class="cells">o</td>
+			  </tr>
+			  <tr>
+			    <td id="cell3a" class="cells">x</td>
+			    <td id="cell3b" class="cells">o</td>
+			    <td id="cell3c" class="cells">x</td>
+			  </tr>
+			  
+		</table>
+
+			<button type="button" id="resetButton">RESET</button>
+
+	</div>
 	
 </body>
 </html>

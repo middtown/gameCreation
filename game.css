@@ -1,6 +1,57 @@
-body{
-	background-color: #898E8C;
+.container{
+	max-width: 80%;
+	max-height: 80%;
+	margin: 2%;
+	padding: 1%;
+	margin: 4% auto;
 }
-#gameboard {
-	background-color: #4F84C4;
+header{
+	text-align: center;
+	border-bottom: 2px solid black;
+	margin-bottom: 1%;
+	padding: 3%;
+	margin: 0 auto;
+}
+li{
+	list-style: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  width: 33.333%;
+  border: 6px solid #222;
+}
+td::after {
+  content: '';
+  display: block;
+  margin-top: 100%;
+}
+td {
+  border: 6px solid #222;
+}
+td:first-of-type {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+td:nth-of-type(2) {
+  border-top-color: transparent;
+}
+td:nth-of-type(3) {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+tr:nth-of-type(3) td {
+  border-bottom-color: transparent;
+}
+.cells:hover {background-color:#f5f5f5;}
+#resetButton{
+	width: 100%;
+	height: auto;
+	padding: 2%;
+	margin: 1%;
+	border-radius: 15px;
+	font-size: 2em;
+	background-color: red;
 }
