@@ -5,15 +5,27 @@
 	padding: 1%;
 	margin: 4% auto;
 }
+.playerInfo{
+	text-align: center;
+	align-content: center;
+	border-bottom: 2px solid black;
+}
+#scoreboard {
+	display: inline;
+}
 header{
 	text-align: center;
 	border-bottom: 2px solid black;
 	margin-bottom: 1%;
-	padding: 3%;
+	padding: 0 1% 1% 1%;
 	margin: 0 auto;
 }
 li{
 	list-style: none;
+	display: inline-block;
+	padding: 1%;
+	margin: 1% auto;
+
 }
 table {
   width: 100%;
