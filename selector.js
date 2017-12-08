@@ -11,8 +11,9 @@ console.log('hello world');
       	} else { 
       	$(this).html("<h2>O</h2>"); }
                 console.log($(this).html());
-      turn++;
         checkForWinner();
+      turn++;
+
     }
   });
 
@@ -39,46 +40,46 @@ console.log('hello world');
         console.log(cell8);
       var cell9 = $("#cell3c").html();
         console.log(cell9);
-    if ((cell1===cell2) && (cell2===cell3)) {
-        return cell3;
+    if ((cell1===cell2) && (cell2===cell3) && (cell1 && cell2 && cell3 != null)) {
+        // return cell3;
         //console.log(cell3);
         winner();
-     } else if 
-        ((cell4===cell5) && (cell5===cell6)) {
-        return cell6;
+     } 
+     else if 
+        ((cell4===cell5) && (cell5===cell6) && (cell4 && cell5 && cell6 != null)) {
+        // return cell6;
         //console.log(cell6);
         winner();
       }else if 
-        ((cell7===cell8) && (cell8===cell9)) {
-        return cell9;
+        ((cell7===cell8) && (cell8===cell9) && (cell7 && cell8 && cell9 != null)) {
+        // return cell9;
         //console.log(cell9);
         winner();
 
       }else if 
-        ((cell1===cell4) && (cell4===cell7)) {
-        return cell7;
+        ((cell1===cell4) && (cell4===cell7) && (cell1 && cell4 && cell7 != null)) {
+        // return cell7;
         //console.log(cell7);
         winner();
       }else if 
-        ((cell2===cell5) && (cell5===cell8)) {
-        return cell8;
+        ((cell2===cell5) && (cell5===cell8) && (cell2 && cell5 && cell8 != null)) {
+        // return cell8;
         //console.log(cell8);
         winner();
       }else if 
-        ((cell3===cell6) && (cell6===cell9)) {
-        return cell9;
+        ((cell3===cell6) && (cell6===cell9) && (cell3 && cell6 && cell9 != null)) {
+        // return cell9;
         //console.log(cell9);
         winner();
       }else if 
-        ((cell1===cell5) && (cell5===cell9)) {
-        return cell9;
+        ((cell1===cell5) && (cell5===cell9) && (cell1 && cell5 && cell9 != null)) {
+        // return cell9;
         //console.log(cell9);
         winner();
       }else if 
-        ((cell3===cell5) && (cell5===cell7)) 
-        return cell7;
-        //console.log(cell7);
+        ((cell3===cell5) && (cell5===cell7) && (cell3 && cell5 && cell7 != null)) {
         winner();
+        }
       }
       // }else
       //   return ("no winner");
@@ -88,10 +89,12 @@ console.log('hello world');
       //console.log(cell3);
     
 function winner() {
-  if ( checkForWinner() === "X")
-    alert ("Player 1 Wins!!");} 
-  if (checkForWinner() === "O") {
-    ("player 2 Wins!!");
+  console.log('we have a winner');
+  if ((turn%2)==1) { 
+    alert('Player One wins!'); 
+  } else { 
+    alert('Player Two wins!'); 
+  }
 }
 
 // Resent board's text to replay game
