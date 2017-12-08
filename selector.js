@@ -2,9 +2,12 @@ $(document).ready(function(){
 console.log('hello world');
 
   var turn = 1;
+  //var x = "X";
+  //var o = "O";
 
   $("#gameboard tr td").click(function() {
   	//wait for click on game board and pieces
+<<<<<<< HEAD
     if ($(this).text()=="") {
       if ((turn%2)==1) { 
       	$(this).html("<h2>X</h2>"); 
@@ -16,6 +19,17 @@ console.log('hello world');
 
     }
   });
+=======
+    if ($(this).text()=="" && (turn%2==1)) {
+      //if ((turn%2)==1) { 
+      	$(this).append("X").css(); 
+      	} else { 
+      	$(this).append("O"); }
+        turn++;
+    });
+
+  
+>>>>>>> gameCreation
 
   // check for winner function
   // The nth-child pseudo-class is specified with a single argument, 
