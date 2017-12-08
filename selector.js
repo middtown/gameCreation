@@ -1,7 +1,6 @@
 $(document).ready(function(){
 console.log('hello world');
 
-
   var turn = 1;
 
   $("#gameboard tr td").click(function() {
@@ -41,49 +40,59 @@ console.log('hello world');
       var cell9 = $("#cell3c").html();
         console.log(cell9);
     if ((cell1===cell2) && (cell2===cell3)) {
-        //return cell3;
-        console.log(cell3);
+        return cell3;
+        //console.log(cell3);
+        winner();
      } else if 
         ((cell4===cell5) && (cell5===cell6)) {
-        //return cell6;
-                console.log(cell6);
+        return cell6;
+        //console.log(cell6);
+        winner();
       }else if 
         ((cell7===cell8) && (cell8===cell9)) {
-        //return cell9;
-                console.log(cell9);
+        return cell9;
+        //console.log(cell9);
+        winner();
+
       }else if 
         ((cell1===cell4) && (cell4===cell7)) {
-        //return cell7;
-                console.log(cell7);
+        return cell7;
+        //console.log(cell7);
+        winner();
       }else if 
         ((cell2===cell5) && (cell5===cell8)) {
-        //return cell8;
-                console.log(cell8);
+        return cell8;
+        //console.log(cell8);
+        winner();
       }else if 
         ((cell3===cell6) && (cell6===cell9)) {
-        //return cell9;
-                console.log(cell9);
+        return cell9;
+        //console.log(cell9);
+        winner();
       }else if 
         ((cell1===cell5) && (cell5===cell9)) {
-        //return cell9;
-                console.log(cell9);
+        return cell9;
+        //console.log(cell9);
+        winner();
       }else if 
         ((cell3===cell5) && (cell5===cell7)) 
-        //return cell7;
-                console.log(cell7);
+        return cell7;
+        //console.log(cell7);
+        winner();
+      }
       // }else
       //   return ("no winner");
       // console.log("these cells match");
       //console.log(cell1);
       //console.log(cell2);
       //console.log(cell3);
-    }
-
- // if (checkForWinner()=="X") { 
- //        alert("Player 1 wins!"); }
- //        else { alert("Player 2 wins!"); }
-  
-
+    
+function winner() {
+  if ( checkForWinner() === "X")
+    alert ("Player 1 Wins!!");} 
+  if (checkForWinner() === "O") {
+    ("player 2 Wins!!");
+}
 
 // Resent board's text to replay game
 $("#resetButton").click(function() {
